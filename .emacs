@@ -1,5 +1,7 @@
-;; For cedet
-;; Load CEDET.
+;;;;;;;;;;;;;;;;;;;;;;; Starter kit
+(load-file "~/.emacs.d/emacs24-starter-kit/init.el")
+
+;;;;;;;;;;;;;;;;;;;;;;; Load CEDET.
 ;; See cedet/common/cedet.info for configuration details.
 ;; IMPORTANT: For Emacs >= 23.2, you must place this *before* any
 ;; CEDET component (including EIEIO) gets activated by another
@@ -40,7 +42,7 @@
 ;; (global-srecode-minor-mode 1)
 (global-set-key [(f4)] 'speedbar-get-focus)
 
-;; ECB configurations
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ECB configurations
 (add-to-list 'load-path "~/.emacs.d/ecb-2.40")
 (add-to-list 'load-path "~/.emacs.d/cedet-1.1/eieio")
 (add-to-list 'load-path "~/.emacs.d/cedet-1.1/semantic")
