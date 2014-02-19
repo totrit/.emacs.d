@@ -1,61 +1,24 @@
-;For Starter kit
+; For Starter kit
 (load-file "~/.emacs.d/emacs24-starter-kit/init.el")
-;;;;;;;;;;;;;;;;;;;;;;;;;;;; For cedet
-;; See cedet/common/cedet.info for configuration details.
-;; IMPORTANT: For Emacs >= 23.2, you must place this *before* any
-;; CEDET component (including EIEIO) gets activated by another
-;; package (Gnus, auth-source, ...).
-(load-file "~/.emacs.d/cedet-1.1/common/cedet.el")
+; END
 
-;; Enable EDE (Project Management) features
-(global-ede-mode 1)
+; For auto-complete
+(add-to-list 'load-path "~/.emacs.d/emacs24-starter-kit/elpa/popup-20140207.1702")
+(add-to-list 'load-path "~/.emacs.d/emacs24-starter-kit/elpa/auto-complete-20140208.653")
+(add-to-list 'load-path "~/.emacs.d/emacs24-starter-kit/elpa/auto-complete-clang-async-20130526.814")
+(require 'auto-complete-clang-async)
+(defun ac-cc-mode-setup ()
+  (setq ac-clang-complete-executable "~/.emacs.d/emacs24-starter-kit/elpa/auto-complete-clang-async-20130526.814/clang-complete")
+  (setq ac-sources '(ac-source-clang-async))
+  (ac-clang-launch-completion-process)
+)
+(defun my-ac-config ()
+  (add-hook 'c-mode-common-hook 'ac-cc-mode-setup)
+  (global-auto-complete-mode t))
+(my-ac-config)
+; END
 
-;; Enable EDE for a pre-existing C++ project
-;; (ede-cpp-root-project "NAME" :file "~/myproject/Makefile")
-
-
-;; Enabling Semantic (code-parsing, smart completion) features
-;; Select one of the following:
-
-;; * This enables the database and idle reparse engines
-(semantic-load-enable-minimum-features)
-
-;; * This enables some tools useful for coding, such as summary mode,
-;;   imenu support, and the semantic navigator
-(semantic-load-enable-code-helpers)
-(semantic-load-enable-semantic-debugging-helpers)
-
-;; * This enables auto complete.
-;;(semantic-ia-complete-symbol-menu)
-
-;; * This enables even more coding tools such as intellisense mode,
-;;   decoration mode, and stickyfunc mode (plus regular code helpers)
-;; (semantic-load-enable-gaudy-code-helpers)
-
-;; * This enables the use of Exuberant ctags if you have it installed.
-;;   If you use C++ templates or boost, you should NOT enable it. 
-;; (semantic-load-enable-all-exuberent-ctags-support)
-;;   Or, use one of these two types of support.
-;;   Add support for new languages only via ctags.
-;; (semantic-load-enable-primary-exuberent-ctags-support)
-;;   Add support for using ctags as a backup parser.
-;; (semantic-load-enable-secondary-exuberent-ctags-support)
-
-;; Enable SRecode (Template management) minor-mode.
-;; (global-srecode-minor-mode 1)
-(global-set-key [(f4)] 'speedbar-get-focus)
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ECB configurations
-(add-to-list 'load-path "~/.emacs.d/ecb-2.40")
-(add-to-list 'load-path "~/.emacs.d/cedet-1.1/eieio")
-(add-to-list 'load-path "~/.emacs.d/cedet-1.1/semantic")
-(add-to-list 'load-path "~/.emacs.d/cedet-1.1/speedbar")
-(setq semantic-load-turn-everything-on t)
-(setq ecb-auto-activate t
-	       ecb-tip-of-the-day nil)
-(require 'ecb)
-
-; totrit's personal preferences
+; For totrit's personal preferences
 ;; CODE FORMAT
 (defun my-c-mode-common-hook ()
 ;;; my customizations for all of c-mode, c++-mode, objc-mode, java-mode
@@ -68,6 +31,6 @@
 (setq tab-width 4)
 (setq indent-tabs-mode t) ; use spaces only if nil
 )
-
 (add-hook 'c-mode-common-hook 'my-c-mode-common-hook) 
+; END
 

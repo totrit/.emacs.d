@@ -2,6 +2,9 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/totrit/work/workspace/quick-sort/" . "src/")
+ ("/home/totrit/work/workspace/radix-sort/" . "src/")
+ ("/home/totrit/.emacs.d/" . "emacs-clang-complete-async/")
  ("/home/totrit/work/workspace/merge-sort/" . "src/")
  ("/home/totrit/work/workspace/DumpRenderTree2/src/com/android/" . "dumprendertree2/")
  ("/home/totrit/work/workspace/DumpRenderTree2/src/com/" . "android/")
@@ -12,7 +15,7 @@
  ("/home/totrit/work/workspace/QQBrowser/core/src/" . "com/")
  ("/home/totrit/work/workspace/QQBrowser/core/" . "src/")
  ("/home/totrit/" . "work/")
- ("/home/totrit/work/workspace/" . "merge-sort/")
+ ("/home/totrit/work/workspace/" . "quick-sort/")
  ("/home/totrit/work/workspace/QQBrowser/ui/src/com/" . "tencent/")
  ("/home/totrit/work/workspace/QQBrowser/ui/src/" . "com/")
  ("/home/totrit/work/workspace/QQBrowser/ui/" . "src/")
@@ -24,49 +27,71 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/totrit/work/workspace/quick-sort/src/"
+ "/home/totrit/work/workspace/radix-sort/src/"
+ "/home/totrit/.emacs.d/emacs-clang-complete-async/"
+ "/home/totrit/"
  "/home/totrit/work/workspace/merge-sort/src/"
  "/home/totrit/work/workspace/DumpRenderTree2/src/com/android/dumprendertree2/"
  "/home/totrit/work/workspace/DumpRenderTree2/"
  "/home/totrit/work/workspace/QQBrowser/core/src/com/tencent/smtt/net/http/"
- "/home/totrit/"
  "/home/totrit/work/workspace/QQBrowser/ui/src/com/tencent/mtt/browser/x5/x5webview/"
  "/home/totrit/work/workspace/QQBrowser/ui/src/com/tencent/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "quick_sort.cpp"
+ "radix-sort.cpp"
+ "auto-complete-clang-async.el"
+ ".emacs"
  "merge-sort.cpp"
  "LayoutTestsExecutor.java"
  "Android.mk"
  "Debug.mk"
  "Debug-new.mk"
  "Connection.java"
- ".emacs"
- "X5Selection.java"
- "JNICall.java"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/totrit/work/workspace/merge-sort/src/" (21222 3720 983968 284000) "#merge-sort.cpp#" "./" "merge-sort.cpp" "../")
+ ("/home/totrit/work/workspace/quick-sort/src/" (21252 13771 403978 909000) "./" "#quick_sort.cpp#" "a.out" "../" "quick_sort.cpp")
 
- ("/home/totrit/" (21222 3764 651970 46000) ".gstreamer-0.10/" ".goutputstream-WF8EQW" ".shutter/" ".gnome2/" ".compiz-1/" "libpeerconnection.log" ".vimrc.later" ".lesshst" ".gitconfig" ".ICEauthority" ".jftp/" ".xsession-errors" ".goutputstream-AH58QW" ".gitk" "选区_001.png" ".compiz/" ".goutputstream-B90KXW" ".gegl-0.0/" ".goutputstream-6M0WSW" ".ccache/" ".gnome/" ".goutputstream-B9UWRW" ".goutputstream-Z8F2QW" ".emacs.d/" "选区_005.png" ".goutputstream-MHJYQW" ".android/" ".goutputstream-LOW8YW" ".goutputstream-15CQVW" "./" ".shotwell/" "选区_006.png" "layouttest-text.png" "software/" "workspace/" ".putty/" ".vim/" ".goutputstream-C7RNPW" ".goutputstream-O4A7QW" ".profile" ".goutputstream-HQ7USW" ".goutputstream-PW0UXW" ".AndroidStudioPreview/" ".gimp-2.6/" ".dbus/" "documents/" ".gvfs/" ".bash_logout" ".goutputstream-2KSB9W" ".RapidSVN" ".pulse-cookie" ".goutputstream-00R09W" ".cola" "rdp.config" "shared-fs/" ".rdp/" "gnome-panel-data_3.4.1-0ubuntu1.1_all.deb" ".goutputstream-APY8PW" ".subversion/" ".gnome2_private/" ".local/" ".thumbnails/" ".gradle/" ".goutputstream-MQ93QW" ".goutputstream-YY8BRW" ".eclipse/" ".goutputstream-7BH0XW" ".gtk-bookmarks" ".goutputstream-6M4Y3W" ".goutputstream-O5TTRW" ".goutputstream-TB2TRW" ".longene/" "work/" ".adobe/" ".bash_history" ".swt/" ".goutputstream-SJMYYW" ".pki/" ".goutputstream-R7DQZW" "../" ".bashrc" ".viminfo" ".goutputstream-CLP0UW" ".goutputstream-BHGATW" "选区_002.png" ".Xauthority" ".goutputstream-HXDJ3W" ".xsession-errors.old" "Ubuntu One/" ".macromedia/" ".java/" ".goutputstream-3297QW" ".goutputstream-8Y9OQW" ".wireshark/" ".gphoto/" ".goutputstream-HMPK1W" ".dmrc" ".fontconfig/" ".gksu.lock" "桌面/" ".mozilla/" "下载/" "选区_007.png" ".srecode/" ".apport-ignore.xml" ".thunderbird/" "gnome-icon-theme-full_3.4.0-0ubuntu1.1_all.deb" ".emacs" ".goutputstream-M136SW" "选区_003.png" ".goutputstream-VH816W" ".qt/" ".pulse/" "examples.desktop" ".goutputstream-F5IURW" ".cache/" ".mission-control/" ".ssh/" ".goutputstream-OPGFXW" ".gconf/" ".config/" ".filezilla/" ".goutputstream-21UWQW" ".vimrc" ".semanticdb/" "选区_004.png")
+ ("/home/totrit/" (21252 13749 455978 5000) ".gstreamer-0.10/" ".goutputstream-WF8EQW" ".shutter/" ".gnome2/" ".compiz-1/" ".ddd/" "libpeerconnection.log" ".vimrc.later" ".lesshst" ".gitconfig" ".ICEauthority" ".jftp/" ".xsession-errors" ".goutputstream-AH58QW" ".gitk" "选区_001.png" ".compiz/" ".goutputstream-B90KXW" ".gegl-0.0/" ".goutputstream-6M0WSW" ".ccache/" ".gnome/" ".goutputstream-B9UWRW" ".goutputstream-Z8F2QW" ".emacs.d/" "选区_005.png" ".goutputstream-MHJYQW" ".android/" ".goutputstream-LOW8YW" ".goutputstream-15CQVW" "./" ".shotwell/" "选区_006.png" ".wine/" "layouttest-text.png" "software/" "workspace/" ".putty/" ".vim/" ".goutputstream-C7RNPW" ".goutputstream-O4A7QW" ".profile" ".goutputstream-HQ7USW" ".goutputstream-PW0UXW" ".AndroidStudioPreview/" ".gimp-2.6/" ".dbus/" "documents/" ".gvfs/" ".bash_logout" ".goutputstream-2KSB9W" ".RapidSVN" ".pulse-cookie" ".goutputstream-00R09W" ".cola" "rdp.config" "shared-fs/" ".rdp/" "gnome-panel-data_3.4.1-0ubuntu1.1_all.deb" ".goutputstream-APY8PW" ".subversion/" ".gnome2_private/" ".local/" ".thumbnails/" ".gradle/" ".goutputstream-MQ93QW" ".goutputstream-YY8BRW" ".eclipse/" ".goutputstream-7BH0XW" ".gtk-bookmarks" ".goutputstream-6M4Y3W" "选区_008.png" ".goutputstream-O5TTRW" ".goutputstream-TB2TRW" ".longene/" "work/" ".adobe/" ".bash_history" ".swt/" ".goutputstream-SJMYYW" ".pki/" ".goutputstream-R7DQZW" ".goutputstream-NBKFAX" "../" ".bashrc" ".viminfo" ".goutputstream-CLP0UW" ".goutputstream-BHGATW" "选区_002.png" ".Xauthority" ".goutputstream-HXDJ3W" ".xsession-errors.old" "Ubuntu One/" ".macromedia/" ".java/" ".goutputstream-3297QW" ".goutputstream-8Y9OQW" ".wireshark/" ".gphoto/" ".goutputstream-P3PMBX" ".goutputstream-HMPK1W" ".dmrc" ".fontconfig/" ".gksu.lock" "桌面/" ".mozilla/" "下载/" "选区_007.png" ".srecode/" ".apport-ignore.xml" ".thunderbird/" "gnome-icon-theme-full_3.4.0-0ubuntu1.1_all.deb" ".emacs" ".goutputstream-M136SW" "选区_003.png" ".goutputstream-VH816W" ".qt/" ".pulse/" "examples.desktop" ".goutputstream-F5IURW" ".cache/" ".mission-control/" ".ssh/" ".goutputstream-OPGFXW" ".gconf/" ".config/" ".filezilla/" ".goutputstream-21UWQW" ".vimrc" ".semanticdb/" "选区_004.png")
 
- ("/home/totrit/work/workspace/merge-sort/" (21222 2600 259923 49000) "./" ".git/" "pseuso.txt" "CMakeLists.txt" "src/" "README.md" "LICENSE" "Makefile" "CMakeFiles/" "cmake_install.cmake" "merge-sort" "../" ".gitignore" "CMakeCache.txt")
+ ("/home/totrit/.emacs.d/" (21252 9700 979811 156000) "ac-comphist.dat" "./" ".git/" "emacs24-starter-kit/" "ido.last" "README.md" "../" "ede-projects.el" "auto-save-list/" ".emacs" "cedet-1.1/" "ecb-2.40/" "elpa/")
 
- ("/home/totrit/work/workspace/DumpRenderTree2/src/com/android/dumprendertree2/" (21221 48011 563110 742000) "FsUtils.java" "LayoutTestController.java" "VisualDiffUtils.java" "CrashedDummyResult.java" "./" "ui/" "PixelResult.java" "AbstractResult.java" "FileFilter.java" "Summarizer.java" "SummarizerDBHelper.java" "TestsListPreloaderThread.java" "LayoutTestsExecutor.dot" "TestsListActivity.java" "ManagerService.java" "../" "TextResult.java" "X5Manager.java" "LayoutTestsExecutor.java" "EventSender.java" "EventSenderImpl.java" "scriptsupport/" ".svn/" "forwarder/" "AdditionalTextOutput.java")
+ ("/home/totrit/.emacs.d/emacs-clang-complete-async/" (21252 3383 603550 799000) "clang-complete" "./" "screenshots/" "README.org" ".git/" "src/" "Makefile" "makefile.mk" "../" ".gitignore" "auto-complete-clang-async.el")
+
+ ("/home/totrit/work/workspace/quick-sort/" (21217 62030 837467 495000) ".project" "./" ".git/" ".cproject" "src/" "README.md" "LICENSE" "Debug/" "../" "pseudo.txt" ".gitignore" ".settings/")
+
+ ("/home/totrit/work/workspace/radix-sort/src/" (21251 21834 781610 300000) "./" "radix-sort.cpp" "#radix-sort.cpp#" "../")
+
+ ("/home/totrit/work/workspace/radix-sort/" (21223 24120 25028 429000) "radix-sort" "./" ".git/" "CMakeLists.txt" "src/" "bin/" "README.md" "LICENSE" "Makefile" "CMakeFiles/" "cmake_install.cmake" "../" ".gitignore" "CMakeCache.txt")
+
+ ("/home/totrit/work/workspace/" (21249 38530 472 842000) "QQBrowser-4.3/" "4.2_r1/" "QQBrowser-5.0/" "QQBrowser-4.4/" "froyo-dbg/" ".metadata/" "froyo.tgz" "radix-sort/" "DumpRenderTree.zip" "QQBrowser-tmp/" "./" "QQBrowser-4.5/" "QQBrowser/" "TimingLogProcessor/" "DumpRenderTree/" "java-test/" "x5_sdk_demo/" "QQBrowser-4.2/" "DumpRenderTree2/" "merge-sort/" "webkit-layouttests/" "froyo-rel/" "../" "QQBrowser-lab/" "x5_sdk_demo.zip" "TimingLogProcessor.tar.gz" "X5sdk/" "jb_4.2_r1.tgz" "QQBrowser-simpleUI/" "X5sdk.tar.gz" "LayoutTests/" "quick-sort/")
+
+ ("/home/totrit/work/" (21249 48729 572893 196000) "./" "tools/" "workspace/" "my_layout_tests/" "eclipse/" "android-env/" "webkit-layouttests/" "../" "android-studio/" "ppt/")
+
+ ("/home/totrit/work/workspace/QQBrowser/ui/src/com/tencent/" (21240 16905 350437 167000) "mtt/" "./" "JNICall.java" "../" "lbsapi/" "smtt/" ".svn/")
+
+ ("/home/totrit/work/workspace/QQBrowser/ui/src/com/tencent/mtt/browser/x5/x5webview/" (21249 40876 240569 538000) "X5ClientSupport.java" "X5FileUtils.java" "X5CopyView.java" "./" "X5NativeWebviewChromeClient.java" "X5WebView.java" "X5WebViewBaseChromeClient.java" "X5WebViewClientExtension.java" "GestureTracker.java" "X5NativePageManager.java" "X5WebViewClientBase.java" "X5WebChromeClient.java" "X5Selection.java" "X5WebAppManager.java" "X5WebViewScrollbarDrawable.java" "X5WebViewClient.java" "X5WebViewLongClickHandler.java" "X5JsExtensions.java" "X5WebBackForwardListClient.java" "X5WebIconDatabase.java" "../" "CameraPath.java" "X5NativeWebviewChromeClientExtension.java" ".svn/" "X5WebChromeClientExtension.java" "X5NativeWebLongClickLinstener.java")
+
+ ("/home/totrit/work/workspace/QQBrowser/core/src/com/tencent/smtt/net/http/" (21249 40854 36568 623000) "PostInfo.java" "CertificateChainValidator.java" "EventHandler.java" "HttpConnection.java" "AbstractSessionOutputBuffer.java" "LoggingEventHandler.java" "IdleCache.java" "ConnectionCreator.java" "DNParser.java" "HttpsConnection.java" "Connection.java" "HttpLog.java" "RequestQueue.java" "./" "DnsManager.java" "DomainNameValidator.java" "MttSSLSocketFactory.java" "ErrorStrings.java" "ConnectionThread.java" "HttpAuthHeader.java" "JNISmttService.java" "Request.java" "CharArrayBuffers.java" "X5SslError.java" "HttpHeader.java" "SocketOutputBuffer.java" "RequestFeeder.java" "AndroidHttpClientConnection.java" "HttpMetricsInfo.java" "Headers.java" "NetworkInterfaces.java" "../" "Timer.java" "RequestHandle.java" "ResolvedHost.java" "ConnectionManager.java" ".svn/")
+
+ ("/home/totrit/work/workspace/DumpRenderTree2/" (21249 55120 293156 576000) ".project" "third-party/" "libs/" "polish_build_properties.xml" "dailybuild.xml" "dest/" "./" "Android.mk" ".git/" "gen/" "ic_launcher-web.png" "core-src/" "src/" "bin/" "dailybuild_option.xml" "res/" "lint.xml" "AndroidManifest.xml" "project.properties" "AutoTest/" ".classpath" "../" "proguard-project.txt" ".gitignore" "QQBrowserAndroid.keystore" "todo_list.txt" ".settings/" "assets/" "dailybuild_common.xml" "gdb/" ".svn/")
+
+ ("/home/totrit/work/workspace/DumpRenderTree2/src/com/android/dumprendertree2/" (21244 10959 581831 970000) "FsUtils.java" "LayoutTestController.java" "VisualDiffUtils.java" "CrashedDummyResult.java" "./" "ui/" "PixelResult.java" "AbstractResult.java" "FileFilter.java" "Summarizer.java" "SummarizerDBHelper.java" "TestsListPreloaderThread.java" "TestsListActivity.java" "ManagerService.java" "../" "TextResult.java" "X5Manager.java" "LayoutTestsExecutor.java" "EventSender.java" "EventSenderImpl.java" "scriptsupport/" ".svn/" "forwarder/" "AdditionalTextOutput.java")
+
+ ("/home/totrit/work/workspace/merge-sort/" (21222 4918 873536 172000) "./" ".git/" "pseuso.txt" "CMakeLists.txt" "src/" "README.md" "LICENSE" "Makefile" "CMakeFiles/" "cmake_install.cmake" "merge-sort" "../" ".gitignore" "CMakeCache.txt")
+
+ ("/home/totrit/work/workspace/merge-sort/src/" (21222 4944 457537 226000) "./" "merge-sort.cpp" "../" "merge-sort.cpp.orig")
 
  ("/home/totrit/work/workspace/DumpRenderTree2/src/com/android/" (21208 57648 98363 170000) "./" "dumprendertree2/" "../" ".svn/")
 
  ("/home/totrit/work/workspace/DumpRenderTree2/src/com/" (21208 57648 126363 172000) "tencent/" "./" "android/" "../" ".svn/")
 
  ("/home/totrit/work/workspace/DumpRenderTree2/src/" (21208 57648 202363 175000) "./" "com/" "../" ".svn/" "MTT/")
-
- ("/home/totrit/work/workspace/DumpRenderTree2/" (21220 54867 560742 204000) ".project" "third-party/" "libs/" "polish_build_properties.xml" "dailybuild.xml" "dest/" "./" "Android.mk" ".git/" "gen/" "ic_launcher-web.png" "core-src/" "src/" "bin/" "dailybuild_option.xml" "res/" "lint.xml" "AndroidManifest.xml" "project.properties" "AutoTest/" ".classpath" "../" "proguard-project.txt" ".gitignore" "QQBrowserAndroid.keystore" ".settings/" "assets/" "dailybuild_common.xml" "gdb/" ".svn/")
-
- ("/home/totrit/work/workspace/QQBrowser/core/src/com/tencent/smtt/net/http/" (21220 44931 988341 172000) "PostInfo.java" "CertificateChainValidator.java" "EventHandler.java" "HttpConnection.java" "AbstractSessionOutputBuffer.java" "LoggingEventHandler.java" "IdleCache.java" "ConnectionCreator.java" "DNParser.java" "HttpsConnection.java" "Connection.java" "HttpLog.java" "RequestQueue.java" "./" "DnsManager.java" "DomainNameValidator.java" "MttSSLSocketFactory.java" "ErrorStrings.java" "ConnectionThread.java" "HttpAuthHeader.java" "JNISmttService.java" "Request.java" "CharArrayBuffers.java" "HttpHeader.java" "SocketOutputBuffer.java" "RequestFeeder.java" "AndroidHttpClientConnection.java" "HttpMetricsInfo.java" "SslError.java" "Headers.java" "NetworkInterfaces.java" "../" "Timer.java" "RequestHandle.java" "ResolvedHost.java" "ConnectionManager.java" ".svn/")
-
- ("/home/totrit/.emacs.d/" (21220 44976 376342 961000) "./" ".git/" "emacs24-starter-kit/" "ido.last" "README.md" "../" "auto-save-list/" ".emacs" "cedet-1.1/" "ecb-2.40/" "elpa/")
 
  ("/home/totrit/work/workspace/QQBrowser/core/src/com/tencent/smtt/net/" (21031 60486 629539 888000) "LocalSocket.java" "LocalSocketAddress.java" "WebAddress.java" "./" "http/" "SntpClient.java" "TrafficStats.java" "ProxyProperties.java" "ParseException.java" "LocalServerSocket.java" "InterfaceConfiguration.java" "HttpDateTime.java" "statdata/" "Credentials.java" "MailTo.java" "../" "LocalSocketImpl.java" "Uri.java" ".svn/")
 
@@ -90,10 +115,6 @@
 
  ("/home/totrit/work/workspace/DumpRenderTree2/core-src/com/tencent/smtt/webkit/" (21218 4681 805425 987000) "WebHistoryItem.java" "HTML5BatteryStatus.java" "WebCoreThreadWatchdog.java" "JsPromptResult.java" "MemoryDataLoader.java" "ConsoleMessage.java" "WebSettings.java" "CacheLoader.java" "h5video/" "DeviceOrientationService.java" "DeviceMotionAndOrientationManager.java" "WebViewClient.java" "AutoCompletePopup.java" "URLUtil.java" "ClientCertRequestHandler.java" "LargeText.java" "QuadF.java" "ProxyListener.java" "QCubeClient.java" "ScaleManager.java" "tbus/" "WebIconDatabase.java" "ContentLoader.java" "RunningVariance.java" "./" "SslCertLookupTable.java" "GeolocationService.java" "ContextHolder.java" "WebViewFactory.java" "EventLogTags.logtags" "HttpAuthHandler.java" "WebViewProvider.java" "WebChromeClientWrapper.java" "FrameLoader.java" "DataLoader.java" "WebViewNetWorker.java" "DateSorter.java" "HTML5Audio.java" "JWebCoreJavaBridge.java" "Network.java" "WebBackForwardList.java" "SmttPermissionException.java" "KeyStoreHandler.java" "CacheManager.java" "CookieManagerFactory.java" "SmttPermission.java" "WebViewInputConnection.java" "SmttPermissionRequestCallback.java" "JavascriptInterface.java" "OverScrollGlow.java" "DeviceMotionService.java" "WebViewInputDispatcher.java" "ViewManager.java" "SMTTCookieManager.java" "WebBackForwardListClient.java" "PluginFullScreenHolder.java" "ZoomManager.java" "PluginStub.java" "WebViewClassicDrawable.java" "PluginData.java" "WebViewFactoryProvider.java" "WebTextView.java" "Plugin.java" "PluginList.java" "PerfChecker.java" "WebViewFragment.java" "JniUtil.java" "AccessibilityInjector.java" "HTML5VideoPreProcess.java" "UrlInterceptHandler.java" "WebViewClassic.java" "ZoomControlBase.java" "WebIconDatabaseClassic.java" "SslClientCertLookupTable.java" "WebStorage.java" "CookieSyncManager.java" "ChromiumCookieManager.java" "WebView.java" "../" "DebugFlags.java" "MockGeolocation.java" "ByteArrayBuilder.java" "PluginManager.java" "package.html" "JsResult.java" "BrowserFrame.java" "WebStorageClassic.java" "FileLoader.java" "WebViewCore.java" "MediaListener.java" "LoadListener.java" "UrlInterceptRegistry.java" "WebSyncManager.java" "WebViewWorker.java" "WebChromeClient.java" "AccessibilityInjectorFallback.java" "CookieManager.java" "adapter/" "MustOverrideException.java" "L10nUtils.java" "SmttPermanentPermissions.java" "ZoomControlEmbedded.java" "HTML5VideoViewProxy.java" "ViewStateSerializer.java" "WebViewDatabase.java" "SslErrorHandler.java" "HTML5NotificationPresenter.java" "CertTool.java" ".svn/" "StreamLoader.java" "WebViewClientClassicExt.java" "ProxyWupParser.java" "WebResourceResponse.java" "glvideo/" "ZoomControlExternal.java" "ProxyManager.java" "CallbackProxy.java" "BrowserDownloadListener.java")
 
- ("/home/totrit/work/workspace/QQBrowser/ui/src/com/tencent/mtt/browser/x5/x5webview/" (21220 37151 624027 126000) "X5ClientSupport.java" "X5FileUtils.java" "X5CopyView.java" "./" "X5NativeWebviewChromeClient.java" "X5WebView.java" "X5WebViewBaseChromeClient.java" "GestureTracker.java" "X5NativePageManager.java" "X5WebViewClientBase.java" "X5WebChromeClient.java" "X5Selection.java" "X5WebAppManager.java" "X5WebViewScrollbarDrawable.java" "X5WebViewClient.java" "X5WebViewLongClickHandler.java" "X5JsExtensions.java" "X5WebBackForwardListClient.java" "X5WebIconDatabase.java" "../" "CameraPath.java" ".svn/" "X5NativeWebLongClickLinstener.java")
-
- ("/home/totrit/work/workspace/QQBrowser/ui/src/com/tencent/" (21217 56520 850912 701000) "mtt/" "./" "JNICall.java" "../" "lbsapi/" "smtt/" "yiya/" ".svn/")
-
  ("/home/totrit/work/workspace/QQBrowser/ui/src/com/" (21217 56520 906912 704000) "qvod/" "tencent/" "./" "iflytek/" "../" ".svn/")
 
  ("/home/totrit/work/workspace/QQBrowser/ui/src/" (21176 58533 592064 868000) "TIRI/" "./" "android/" "LBSAPIProtocol/" "com/" "../" ".svn/" "MTT/" "LBSAddrProtocol/")
@@ -101,10 +122,6 @@
  ("/home/totrit/work/workspace/QQBrowser/ui/" (21218 4289 185410 141000) "build_option.xml" "tcr.py" ".project" "libs/" "dest/" "./" "tools/" ".idea/" "out/" "gen/" "openApi/" "libs_debug/" "src/" "bin/" "proguard.cfg" "res/" "libs_release/" "lint.xml" "AndroidManifest.xml" "qrcode/" "project.properties" "janalysis.xml" "arsc/" "AutoTest/" "common.properties" "external_link_to_core/" ".classpath" "../" "ui.iml" "build_properties.xml" "obj/" "symbolLib/" "QQBrowserAndroid.keystore" "yiya/" ".settings/" "assets/" ".svn/" "build_common.xml" "build.xml" "proguard4.7/")
 
  ("/home/totrit/work/workspace/QQBrowser/" (21218 13610 201786 371000) "./" "ui/" ".idea/" "out/" ".git/" "ci" "../" "core/" ".gitignore" "smtt/" "push-core.sh")
-
- ("/home/totrit/work/workspace/" (21217 60768 161415 456000) "QQBrowser-4.3/" "4.2_r1/" "QQBrowser-5.0/" "QQBrowser-4.4/" "froyo-dbg/" ".metadata/" "froyo.tgz" "DumpRenderTree.zip" "QQBrowser-tmp/" "./" "QQBrowser-4.5/" "QQBrowser/" "TimingLogProcessor/" "DumpRenderTree/" "java-test/" "x5_sdk_demo/" "QQBrowser-4.2/" "DumpRenderTree2/" "LayoutTestCases/" "merge-sort/" "froyo-rel/" "../" "QQBrowser-lab/" "x5_sdk_demo.zip" "TimingLogProcessor.tar.gz" "X5sdk/" "jb_4.2_r1.tgz" "QQBrowser-simpleUI/" "X5sdk.tar.gz" "quick-sort/")
-
- ("/home/totrit/work/" (21214 9758 984100 209000) "./" "tools/" "workspace/" "my_layout_tests/" "eclipse/" "android-env/" "../" "android-studio/" "LayoutTests/")
 
  ("/home/" (20698 50425 574887 748000) "./" "../" "totrit/")
 )
