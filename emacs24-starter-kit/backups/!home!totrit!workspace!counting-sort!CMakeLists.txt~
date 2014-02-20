@@ -1,0 +1,6 @@
+PROJECT (shell-sort)
+SET(SRC_LIST src/shell-sort.cpp)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "bin/")
+MESSAGE(STATUS "This is BINARY dir " ${HELLO_BINARY_DIR})
+MESSAGE(STATUS "This is SOURCE dir "${HELLO_SOURCE_DIR})
+ADD_EXECUTABLE(shell-sort ${SRC_LIST})

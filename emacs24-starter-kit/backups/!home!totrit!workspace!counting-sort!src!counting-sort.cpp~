@@ -1,0 +1,45 @@
+#include <assert.h>
+#include <time.h>
+
+#include <algorithm>
+#include <iostream>
+#include <vector>
+
+void counting_sort(const int src[],  int dst[], int array_len) {
+
+	// 1. pick out the min and max of the array.
+
+int min;
+int max;
+
+
+	// 2. create a counting array, and do the counting.
+
+	// 3. accumulate the counting.
+
+	// 4. sort to the 'dst'
+}
+
+int main() {
+	srand(time(NULL));
+	const int ARRAY_LEN = 1000;
+	const int INT_RANGE = 100000;
+	int *array = new int[ARRAY_LEN];
+	for (int i = 0; i < ARRAY_LEN; i ++) {
+		array[i] = rand() % INT_RANGE;
+	}
+
+	// Sort in standard way
+	std::vector<int> v(array, array + ARRAY_LEN);
+	std::sort(v.begin(), v.end());
+
+	// Sort in our way
+	counting_sort(array, ARRAY_LEN);
+
+	// Compare them
+	for (int i = 0; i < ARRAY_LEN; i ++)
+	{
+		//	std::cout << array[i] << ", ";
+		assert(v[i] == array[i]);
+	}
+}

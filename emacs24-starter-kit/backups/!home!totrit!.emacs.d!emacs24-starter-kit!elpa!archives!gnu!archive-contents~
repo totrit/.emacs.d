@@ -6,7 +6,7 @@
 		   ("tools" "processes" "convenience"))
 	(:url . "https://github.com/leoliu/ack-el"))])
  (ada-mode .
-	   [(5 0 1)
+	   [(5 0)
 	    ((wisi
 	      (1 0)))
 	    "major-mode for editing Ada sources" tar
@@ -36,8 +36,7 @@
  (auctex .
 	 [(11 87 2)
 	  nil "Integrated environment for *TeX*" tar
-	  ((:keywords quote nil)
-	   (:url . "http://www.gnu.org/software/auctex/"))])
+	  ((:url . "http://www.gnu.org/software/auctex/"))])
  (cl-lib .
 	 [(0 4)
 	  nil "Properly prefixed CL functions and macros" single
@@ -50,7 +49,7 @@
 		(:keywords quote
 			   ("coffeescript" "major" "mode")))])
  (company .
-	  [(0 7)
+	  [(0 6 14)
 	   nil "Modular in-buffer completion framework" tar
 	   ((:keywords quote
 		       ("abbrev" "convenience" "matching"))
@@ -80,7 +79,7 @@
 	      (:keywords quote
 			 ("extensions" "matching" "data structures trie" "tree" "dictionary" "completion" "regexp")))])
  (diff-hl .
-	  [(1 5 3)
+	  [(1 5 1)
 	   ((cl-lib
 	     (0 2)))
 	   "Highlight uncommitted changes" tar
@@ -140,7 +139,7 @@
 	   ((:url . "http://elpa.gnu.org/packages/flylisp.html")
 	    (:keywords quote nil))])
  (ggtags .
-	 [(0 7 9)
+	 [(0 7 8)
 	  ((emacs
 	    (24)))
 	  "emacs frontend to GNU Global source code tagging system" single
@@ -249,7 +248,7 @@
 	    ((:url . "http://elpa.gnu.org/packages/omn-mode.html")
 	     (:keywords quote nil))])
  (org .
-      [(20140217)
+      [(20140127)
        nil "Outline-based notes management and organizer" tar nil])
  (quarter-plane .
 		[(0 1)
@@ -342,15 +341,13 @@
 			 ("convenience" "files" "undo" "redo" "history" "tree")))])
  (uni-confusables .
 		  [(0 1)
-		   nil "Unicode confusables table" tar
-		   ((:keywords quote nil)
-		    (:url . "http://elpa.gnu.org/packages/uni-confusables.html"))])
+		   nil "Unicode confusables table" tar nil])
  (vlf .
-      [(1 4)
-       nil "View Large Files" tar
-       ((:keywords quote
-		   ("large files" "utilities"))
-	(:url . "https://github.com/m00natic/vlfi"))])
+      [(1 2)
+       nil "View Large Files" single
+       ((:url . "https://github.com/m00natic/vlfi")
+	(:keywords quote
+		   ("large files" "utilities")))])
  (w3 .
      [(4 0 49)
       nil "Fully customizable, largely undocumented web browser for Emacs" tar
