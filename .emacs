@@ -18,6 +18,16 @@
 (my-ac-config)
 ; END
 
+; For gtags
+(add-to-list 'load-path "~/.emacs.d/emacs24-starter-kit/elpa/gtags-3.3")
+(load-file "~/.emacs.d/emacs24-starter-kit/elpa/gtags-3.3/gtags.el")
+(setq gtags-suggested-key-mapping t)
+(autoload 'gtags-mode "gtags" "" t)
+(add-hook 'c-mode-hook
+   '(lambda ()
+      (gtags-mode 1)
+))
+; END
 ; For totrit's personal preferences
 ;; CODE FORMAT
 (defun my-c-mode-common-hook ()
