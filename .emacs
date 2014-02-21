@@ -47,5 +47,13 @@
 (setq indent-tabs-mode t) ; use spaces only if nil
 )
 (add-hook 'c-mode-common-hook 'my-c-mode-common-hook) 
+
+;; Personal key bindings
+(global-set-key (kbd "C-x k") 'windmove-up)
+(global-set-key (kbd "C-x j") 'windmove-down)
+(global-set-key (kbd "C-x l") 'windmove-right)
+(global-set-key (kbd "C-x h") 'windmove-left)
+(global-set-key (kbd "C-x p") 'previous-buffer)
+(global-set-key (kbd "C-x n") 'next-buffer)
 ; END
 
