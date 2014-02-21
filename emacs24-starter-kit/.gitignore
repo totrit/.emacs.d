@@ -4,7 +4,7 @@
 ## misc
 loaddefs.el*
 auto-save-list
-custom.el
+#custom.el
 places
 .svn
 .DS_Store
@@ -18,14 +18,14 @@ eshell/*
 image-dired/*
 elim/*
 doc/*
-elpa/*
+#elpa/*
 src/*
 themes/*
 url/*
 
 ## exported and encrypted files
 *gpg
-*el
+#*el
 *elc
 *html
 *tex
@@ -49,5 +49,5 @@ abbrev_defs
 scratch
 secret.org
 .emacs.desktop*
-.*~
+*.*~
 agent/*
