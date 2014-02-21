@@ -18,14 +18,14 @@ eshell/*
 image-dired/*
 elim/*
 doc/*
-#elpa/*
+elpa/*
 src/*
 themes/*
 url/*
 
 ## exported and encrypted files
 *gpg
-#*el
+*el
 *elc
 *html
 *tex

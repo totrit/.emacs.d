@@ -1,4 +1,7 @@
 auto-save-list
-*/backups
+backups
 ac-comphist.dat
 ido.last
+GPATH
+GRTAGS
+GTAGS
