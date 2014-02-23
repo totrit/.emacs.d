@@ -568,8 +568,7 @@ set new cflags for ac-clang from shell command output"
       (erase-buffer))
     (setq ac-clang-status 'wait)
     (set-process-filter ac-clang-completion-process 'ac-clang-flymake-process-filter)
-    (ac-clang-send-syntaxcheck-request ac-clang-completion-process))
-    (local-set-key (kbd "C-x c") 'ac-clang-syntax-check))
+    (ac-clang-send-syntaxcheck-request ac-clang-completion-process)))
 
 
 
