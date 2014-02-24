@@ -45,7 +45,8 @@
 ; For Android-Mode
 (add-to-list 'load-path "~/.emacs.d/emacs24-starter-kit/elpa/android-mode-20131104.748")
 (require 'android-mode)
-(defcustom android-mode-sdk-dir "~/software/installess/adt-bundle-linux-x86-20131030/sdk")
+(custom-set-variables
+ '(android-mode-sdk-dir "~/work/tools/adt-bundle-linux-x86_64-20130522/sdk"))
 ; END
 
 ; For totrit's personal preferences
