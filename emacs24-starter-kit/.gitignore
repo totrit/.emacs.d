@@ -19,6 +19,7 @@ image-dired/*
 elim/*
 doc/*
 #elpa/*
+elpa/archives/*
 src/*
 themes/*
 url/*

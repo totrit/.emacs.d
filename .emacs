@@ -49,6 +49,15 @@
  '(android-mode-sdk-dir "~/work/tools/adt-bundle-linux-x86_64-20130522/sdk"))
 ; END
 
+; For cmake mode
+(setq load-path (cons (expand-file-name "~/.emacs.d/emacs24-starter-kit/elpa/cmake-mode-20140217.659") load-path))
+(require 'cmake-mode)
+(setq auto-mode-alist
+      (append '(("CMakeLists\\.txt\\'" . cmake-mode)
+                ("\\.cmake\\'" . cmake-mode))
+              auto-mode-alist))
+;END
+
 ; For totrit's personal preferences
 ;; CODE FORMAT
 (defun my-c-mode-common-hook ()
