@@ -74,12 +74,12 @@
 (add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
 
 ;; Personal key bindings
-(global-set-key (kbd "C-x k") 'windmove-up)
-(global-set-key (kbd "C-x j") 'windmove-down)
-(global-set-key (kbd "C-x l") 'windmove-right)
-(global-set-key (kbd "C-x h") 'windmove-left)
-(global-set-key (kbd "C-x p") 'previous-buffer)
-(global-set-key (kbd "C-x n") 'next-buffer)
-(global-set-key (kbd "C-x e") 'kill-this-buffer)
+(global-set-key (kbd "C-c C-x k") 'windmove-up)
+(global-set-key (kbd "C-c C-x j") 'windmove-down)
+(global-set-key (kbd "C-c C-x l") 'windmove-right)
+(global-set-key (kbd "C-c C-x h") 'windmove-left)
+(global-set-key (kbd "C-c C-x p") 'previous-buffer)
+(global-set-key (kbd "C-c C-x n") 'next-buffer)
+(global-set-key (kbd "C-c C-x e") 'kill-this-buffer)
 ; END
 
