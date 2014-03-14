@@ -36,7 +36,7 @@
 ; END
 
 ; For Google C code style
-(add-to-list 'load-path "/home/totrit/.emacs.d/emacs24-starter-kit/elpa/google-c-style-20130412.1415")
+(add-to-list 'load-path "~/.emacs.d/emacs24-starter-kit/elpa/google-c-style-20130412.1415")
 (require 'google-c-style)
 (add-hook 'c-mode-common-hook 'google-set-c-style)
 (add-hook 'c-mode-common-hook 'google-make-newline-indent)
