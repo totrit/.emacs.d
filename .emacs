@@ -57,12 +57,20 @@
                 ("\\.cmake\\'" . cmake-mode))
               auto-mode-alist))
 ;END
+; For org mode
+(setq org-startup-indented t)
+; END
 
 ; For totrit's personal preferences
 ;; CODE FORMAT
 (defun my-c-mode-common-hook ()
 ;;; my customizations for all of c-mode, c++-mode, objc-mode, java-mode
 (c-set-offset 'substatement-open 0)
+;; clipboard
+(setq x-select-enable-clipboard t)
+;; startup with no tool bar
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
 ;;; other customizations can go here
 (setq c++-tab-always-indent t)
 (setq c-basic-offset 4) ;; Default is 2
@@ -80,6 +88,6 @@
 (global-set-key (kbd "C-c C-x h") 'windmove-left)
 (global-set-key (kbd "C-c C-x p") 'previous-buffer)
 (global-set-key (kbd "C-c C-x n") 'next-buffer)
-(global-set-key (kbd "C-c C-x e") 'kill-this-buffer)
+(global-set-key (kbd "C-x e") 'kill-this-buffer)
 ; END
 
