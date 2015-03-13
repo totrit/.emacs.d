@@ -1,27 +1,42 @@
+(require 'cl)
+(defvar emacs-root (if (or (eq system-type 'darwin)
+			 (eq system-type 'gnu/linux)
+			 (eq system-type 'linux))
+		 "/Users/maruilin/" 		 "e:/home/totrit/")
+  "My home directory — the root of my personal emacs load-path.")
+
+(labels ((add-path (p)
+	 (add-to-list 'load-path
+			(concat emacs-root p))))
+(add-path ".emacs.d")
+(add-path ".emacs.d/emacs24-starter-kit")
+(add-path ".emacs.d/emacs24-starter-kit/elpa/popup-20140207.1702")
+(add-path ".emacs.d/emacs24-starter-kit/elpa/auto-complete-20140208.653")
+(add-path ".emacs.d/emacs24-starter-kit/elpa/auto-complete-clang-async-20130526.814")
+(add-path ".emacs.d/emacs24-starter-kit/elpa/gtags-3.3")
+(add-path ".emacs.d/emacs24-starter-kit/elpa/google-c-style-20130412.1415")
+(add-path ".emacs.d/emacs24-starter-kit/elpa/cmake-mode-20140217.659")
+)
 ; For Starter kit
-(load-file "~/.emacs.d/emacs24-starter-kit/init.el")
+(load-file (concat emacs-root ".emacs.d/emacs24-starter-kit/init.el"))
 ; END
 
 ; For auto-complete
-(add-to-list 'load-path "~/.emacs.d/emacs24-starter-kit/elpa/popup-20140207.1702")
-(add-to-list 'load-path "~/.emacs.d/emacs24-starter-kit/elpa/auto-complete-20140208.653")
-(add-to-list 'load-path "~/.emacs.d/emacs24-starter-kit/elpa/auto-complete-clang-async-20130526.814")
-(require 'auto-complete-clang-async)
-(defun ac-cc-mode-setup ()
-  (setq ac-clang-complete-executable "~/.emacs.d/emacs24-starter-kit/elpa/auto-complete-clang-async-20130526.814/clang-complete")
-  (setq ac-sources '(ac-source-clang-async))
-  (ac-clang-launch-completion-process)
-)
-(defun my-ac-config ()
-  (add-hook 'c-mode-common-hook 'ac-cc-mode-setup)
-  (global-auto-complete-mode t))
-  (local-set-key (kbd "C-x c") 'ac-clang-syntax-check)
+;;(require 'auto-complete-clang-async)
+;;(defun ac-cc-mode-setup ()
+;;  (setq ac-clang-complete-executable "~/.emacs.d/emacs24-starter-kit/elpa/auto-complete-clang-async-20130526.814/clang-complete")
+;;  (setq ac-sources '(ac-source-clang-async))
+;;  (ac-clang-launch-completion-process)
+;;)
+;;(defun my-ac-config ()
+;;  (add-hook 'c-mode-common-hook 'ac-cc-mode-setup)
+;;  (global-auto-complete-mode t))
+;;  (local-set-key (kbd "C-x c") 'ac-clang-syntax-check)
 
-(my-ac-config)
+;;(my-ac-config)
 ; END
 
 ; For gtags
-(add-to-list 'load-path "~/.emacs.d/emacs24-starter-kit/elpa/gtags-3.3")
 (autoload 'gtags-mode "gtags" "" t)
 (add-hook 'gtags-select-mode-hook
   '(lambda ()
@@ -36,21 +51,19 @@
 ; END
 
 ; For Google C code style
-(add-to-list 'load-path "~/.emacs.d/emacs24-starter-kit/elpa/google-c-style-20130412.1415")
 (require 'google-c-style)
 (add-hook 'c-mode-common-hook 'google-set-c-style)
 (add-hook 'c-mode-common-hook 'google-make-newline-indent)
 ; END
 
 ; For Android-Mode
-(add-to-list 'load-path "~/.emacs.d/emacs24-starter-kit/elpa/android-mode-20131104.748")
-(require 'android-mode)
-(custom-set-variables
- '(android-mode-sdk-dir "~/work/tools/adt-bundle-linux-x86_64-20130522/sdk"))
+;;(add-to-list 'load-path "~/.emacs.d/emacs24-starter-kit/elpa/android-mode-20131104.748")
+;;(require 'android-mode)
+;;(custom-set-variables
+;; '(android-mode-sdk-dir "~/work/tools/adt-bundle-linux-x86_64-20130522/sdk"))
 ; END
 
 ; For cmake mode
-(setq load-path (cons (expand-file-name "~/.emacs.d/emacs24-starter-kit/elpa/cmake-mode-20140217.659") load-path))
 (require 'cmake-mode)
 (setq auto-mode-alist
       (append '(("CMakeLists\\.txt\\'" . cmake-mode)
@@ -58,7 +71,34 @@
               auto-mode-alist))
 ;END
 ; For org mode
+;; org directory
+(setq org-directory (concat emacs-root "work/org/"))
+(setq org-mobile-directory (concat emacs-root "owncloud/mobileorg/"))
+(setq org-mobile-inbox-for-pull (concat org-directory "from-mobile.org"))
 (setq org-startup-indented t)
+(setq org-todo-keywords
+	'((sequence "TODO(t)" "PENDING(p@/!)" "|" "DONE(d)" "DELEGATED(@/!)" "CANCELED(c@/!)")))
+;; org agenda files
+(setq org-agenda-files (list (concat org-directory "/work.org")
+                             (concat org-directory "/personal.org")
+			     (concat org-directory "/from-mobile.org")))
+;; Capture
+(setq org-default-notes-file (concat org-directory "/notes.org"))
+(define-key global-map "\C-cc" 'org-capture)
+;; Clock sound
+(setq org-clock-sound t)
+;; Let Emacs shell load .bashrc
+(setq shell-command-switch "-ic")
+;; org publish
+(load-library "my-org-publish")
+;; uml
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '(;; other Babel languages
+   (plantuml . t)))
+(setq org-plantuml-jar-path
+      (expand-file-name (concat emacs-root ".emacs.d/executables/plantuml.8020.jar")))
+(load-library "ob-plantuml")
 ; END
 
 ; For totrit's personal preferences
@@ -90,4 +130,8 @@
 (global-set-key (kbd "C-c C-x n") 'next-buffer)
 (global-set-key (kbd "C-x e") 'kill-this-buffer)
 ; END
+
+
+;; graph dot
+(load-file (concat emacs-root ".emacs.d/emacs24-starter-kit/elpa/graphviz-dot/graphviz-dot-mode.el"))
 

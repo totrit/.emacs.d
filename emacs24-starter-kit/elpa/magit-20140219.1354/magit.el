@@ -62,8 +62,8 @@ Use the function by the same name instead of this variable.")
 
 ;;;; Dependencies
 
-(when (version< emacs-version "23.2")
-  (error "Magit requires at least GNU Emacs 23.2"))
+;;(when (version< emacs-version "23.2")
+;;  (error "Magit requires at least GNU Emacs 23.2"))
 
 ;; Users may choose to use `magit-log-edit' instead of the preferred
 ;; `git-commit-mode', by simply putting it on the `load-path'.  If
