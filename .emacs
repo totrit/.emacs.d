@@ -16,6 +16,7 @@
 (add-path ".emacs.d/emacs24-starter-kit/elpa/gtags-3.3")
 (add-path ".emacs.d/emacs24-starter-kit/elpa/google-c-style-20130412.1415")
 (add-path ".emacs.d/emacs24-starter-kit/elpa/cmake-mode-20140217.659")
+(add-path ".emacs.d/emacs24-starter-kit/elpa/org-20150223")
 )
 ; For Starter kit
 (load-file (concat emacs-root ".emacs.d/emacs24-starter-kit/init.el"))
