@@ -4,6 +4,11 @@
 			 (eq system-type 'linux))
 		 "/Users/maruilin/" 		 "e:/home/totrit/")
   "My home directory — the root of my personal emacs load-path.")
+(defvar org-directory (if (or (eq system-type 'darwin)
+			 (eq system-type 'gnu/linux)
+			 (eq system-type 'linux))
+		 "/Users/maruilin/Kanbox/org/" 		 "e:/KuPan/org/")
+  "My home directory — the root of my personal emacs load-path.")
 
 (labels ((add-path (p)
 	 (add-to-list 'load-path
@@ -73,8 +78,7 @@
 ;END
 ; For org mode
 ;; org directory
-(setq org-directory (concat emacs-root "work/org/"))
-(setq org-mobile-directory (concat emacs-root "owncloud/mobileorg/"))
+(setq org-mobile-directory (concat org-directory "owncloud/mobileorg/"))
 (setq org-mobile-inbox-for-pull (concat org-directory "from-mobile.org"))
 (setq org-startup-indented t)
 (setq org-todo-keywords

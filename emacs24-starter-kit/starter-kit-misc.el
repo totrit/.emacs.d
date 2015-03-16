@@ -30,6 +30,8 @@
 
 (auto-compression-mode t)
 
+(recentf-mode 1)
+
 (show-paren-mode 1)
 
 (when (> emacs-major-version 21)
