@@ -134,6 +134,7 @@
 (global-set-key (kbd "C-c C-x p") 'previous-buffer)
 (global-set-key (kbd "C-c C-x n") 'next-buffer)
 (global-set-key (kbd "C-x e") 'kill-this-buffer)
+(global-set-key (kbd "C-<RET>") 'set-mark-command)
 ; END
 
 
