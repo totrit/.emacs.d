@@ -7,7 +7,7 @@
 (defvar org-directory (if (or (eq system-type 'darwin)
 			 (eq system-type 'gnu/linux)
 			 (eq system-type 'linux))
-		 "/Users/maruilin/Kanbox/org/" 		 "e:/KuPan/org/")
+		 "/Users/maruilin/BaiduYun/org/" 		 "e:/BaiduYun/org/")
   "My home directory — the root of my personal emacs load-path.")
 
 (labels ((add-path (p)
@@ -78,11 +78,14 @@
 ;END
 ; For org mode
 ;; org directory
-(setq org-mobile-directory (concat org-directory "owncloud/mobileorg/"))
+(setq org-mobile-directory (concat org-directory "mobileorg/"))
 (setq org-mobile-inbox-for-pull (concat org-directory "from-mobile.org"))
+(when (string-equal system-type "windows-nt")
+	(setq org-mobile-checksum-binary "c:/Windows/System32/sha1sum.exe")
+)
 (setq org-startup-indented t)
 (setq org-todo-keywords
-	'((sequence "TODO(t)" "PENDING(p@/!)" "|" "DONE(d)" "DELEGATED(@/!)" "CANCELED(c@/!)")))
+	'((sequence "TODO(t)" "PENDING(p@/!)" "|" "DONE(d!)" "DELEGATED(@/!)" "CANCELED(c@/!)")))
 ;; org agenda files
 (setq org-agenda-files (list (concat org-directory "/work.org")
                              (concat org-directory "/personal.org")
@@ -96,6 +99,7 @@
 (setq shell-command-switch "-ic")
 ;; org publish
 (load-library "my-org-publish")
+(setq org-html-postamble nil)
 ;; uml
 (org-babel-do-load-languages
  'org-babel-load-languages
@@ -137,7 +141,8 @@
 (global-set-key (kbd "C-<RET>") 'set-mark-command)
 ; END
 
-
 ;; graph dot
 (load-file (concat emacs-root ".emacs.d/emacs24-starter-kit/elpa/graphviz-dot/graphviz-dot-mode.el"))
+;; 解决ido乱码问题
+(setq ido-save-directory-list-file nil)
 
