@@ -19,7 +19,7 @@
 (labels ((add-path (p)
 	 (add-to-list 'load-path
 			(concat emacs-root p))))
-(add-path ".emacs.d")
+(add-path ".emacs.d/lisp")
 (add-path ".emacs.d/emacs24-starter-kit")
 (add-path ".emacs.d/emacs24-starter-kit/elpa/popup-20140207.1702")
 (add-path ".emacs.d/emacs24-starter-kit/elpa/auto-complete-20140208.653")
@@ -95,6 +95,7 @@
 ;; org agenda files
 (setq org-agenda-files (list (concat org-directory "/work.org")
                              (concat org-directory "/personal.org")
+                             (concat org-directory "/journal.org") 
 			     (concat org-directory "/from-mobile.org")))
 ;; Capture
 (setq org-default-notes-file (concat org-directory "/notes.org"))
@@ -150,5 +151,5 @@
 ;; graph dot
 (load-file (concat emacs-root ".emacs.d/emacs24-starter-kit/elpa/graphviz-dot/graphviz-dot-mode.el"))
 ;; 解决ido乱码问题
-(setq ido-save-directory-list-file nil)
+;;(setq ido-save-directory-list-file nil)
 
