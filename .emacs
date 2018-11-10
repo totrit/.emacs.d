@@ -33,6 +33,7 @@
                           graphviz-dot-mode
                           org
                           plantuml-mode
+                          ledger-mode
                           htmlize
                           smex
                           solarized-theme
