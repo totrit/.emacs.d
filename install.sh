@@ -3,7 +3,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}"  )" >/dev/null && pwd  )"
 # Copy to .emacs to HOME dir
 cp $DIR/.emacs $DIR/..
 # Install Emacs
-brew cask install emacs-mac
+brew cask install emacs
 # Download dependencies to 'vendor' folder
 mkdir -p $DIR/vendor
 wget https://cytranet.dl.sourceforge.net/project/plantuml/plantuml.jar -O $DIR/vendor/plantuml.jar
