@@ -1,11 +1,5 @@
+elpa
+*.dat
+*.data
 auto-save-list
-backups
-ac-comphist.dat
-ido.last
-GPATH
-GRTAGS
-GTAGS
-recentf
-url
-bookmarks
-emacs24-starter-kit/custom.el
+vendor
