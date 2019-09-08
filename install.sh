@@ -6,7 +6,7 @@ cp $DIR/.emacs $DIR/..
 brew cask install emacs
 # Download dependencies to 'vendor' folder
 mkdir -p $DIR/vendor
-wget https://cytranet.dl.sourceforge.net/project/plantuml/plantuml.jar -O $DIR/vendor/plantuml.jar
+curl https://cytranet.dl.sourceforge.net/project/plantuml/plantuml.jar --output $DIR/vendor/plantuml.jar
 # Install external executables
 brew install proselint # For Flycheck - syntax check
 brew install aspell # For spell check
